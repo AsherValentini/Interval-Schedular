@@ -30,6 +30,12 @@ int main() {
   for (auto& interval : intervals) {
     std::cout << interval << std::endl;
   }
+  std::cout << std::endl;
+  auto results = scheduler->nonOverlappingMaximalIntervals(intervals);
+
+  for (auto& interval : results) {
+    std::cout << interval << std::endl;
+  }
 
   // okay the sort works now all we got to do is go to gym and finish this tomorrow...took one hour
   // to get this this point
